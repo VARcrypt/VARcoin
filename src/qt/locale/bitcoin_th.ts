@@ -92,7 +92,7 @@
     <name>BanTableModel</name>
     </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>VarcoinGUI</name>
     </context>
 <context>
     <name>CoinControlDialog</name>
@@ -214,6 +214,6 @@
     </message>
     </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>varcoin-core</name>
     </context>
 </TS>
