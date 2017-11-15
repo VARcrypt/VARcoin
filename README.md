@@ -13,7 +13,7 @@ anyone, anywhere in the world specifically designed for Media and other technolo
 technology to operate
 with no central authority: managing transactions and issuing money are carried
 out collectively by the network. VARcoin is the name of open source
-software which enables the use of this currency.
+software which enables the use of this currency based on the Bitcoin blockchain.
 
 License
 -------
