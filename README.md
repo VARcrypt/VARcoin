@@ -1,4 +1,4 @@
-VARcoin integration/staging tree
+VARcoin
 =====================================
 
 
