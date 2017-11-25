@@ -11,6 +11,8 @@
 #include "primitives/block.h"
 #include "uint256.h"
 
+#include "util.h"
+
 unsigned int static KimotoGravityWell(const CBlockIndex* pindexLast, const CBlockHeader *pblock, uint64_t TargetBlocksSpacingSeconds, uint64_t PastBlocksMin, uint64_t PastBlocksMax, uint256 powLimit) {
 	/* current difficulty formula, megacoin - kimoto gravity well */
 	const CBlockIndex  *BlockLastSolved				= pindexLast;
@@ -66,11 +68,10 @@ unsigned int static KimotoGravityWell(const CBlockIndex* pindexLast, const CBloc
 	}
     if (bnNew > powLimitArith) { bnNew = powLimitArith; }
 	
-    /// debug print
-    printf("Difficulty Retarget - Kimoto Gravity Well\n");
-    printf("PastRateAdjustmentRatio = %g\n", PastRateAdjustmentRatio);
-    printf("Before: %08x  %s\n", BlockLastSolved->nBits, ArithToUint256(arith_uint256().SetCompact(BlockLastSolved->nBits)).ToString().c_str());
-    printf("After:  %08x  %s\n", bnNew.GetCompact(), ArithToUint256(bnNew).ToString().c_str());
+    LogPrintf("Difficulty Retarget - Kimoto Gravity Well\n");
+    LogPrintf("PastRateAdjustmentRatio = %g\n", PastRateAdjustmentRatio);
+    LogPrintf("Before: %08x  %s\n", BlockLastSolved->nBits, ArithToUint256(arith_uint256().SetCompact(BlockLastSolved->nBits)).ToString().c_str());
+    LogPrintf("After:  %08x  %s\n", bnNew.GetCompact(), ArithToUint256(bnNew).ToString().c_str());
 	
 	return bnNew.GetCompact();
 }
