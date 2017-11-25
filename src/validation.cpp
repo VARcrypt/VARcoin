@@ -1019,6 +1019,10 @@ bool ReadBlockFromDisk(CBlock& block, const CBlockIndex* pindex, const Consensus
 
 CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
 {
+
+    if(nHeight == 1)
+        return CAmount(21000000 * COIN);
+
     int halvings = nHeight / consensusParams.nSubsidyHalvingInterval;
     // Force block reward to zero when right shift is undefined.
     if (halvings >= 64)
@@ -2968,6 +2972,21 @@ static bool ContextualCheckBlock(const CBlock& block, CValidationState& state, c
         if (block.vtx[0]->vin[0].scriptSig.size() < expect.size() ||
             !std::equal(expect.begin(), expect.end(), block.vtx[0]->vin[0].scriptSig.begin())) {
             return state.DoS(100, false, REJECT_INVALID, "bad-cb-height", false, "block height mismatch in coinbase");
+        }
+    }
+
+    if (nHeight == 1)
+    {
+        const CTxOut& output = block.vtx[0]->vout[0];
+
+        bool valid = Params().isPreminePubkey(output.scriptPubKey);
+
+        if (!valid)
+        {
+            return state.DoS(
+                    100, false, REJECT_INVALID, "bad-scriptpubkey",
+                    false,
+                    "not premine address");
         }
     }
 

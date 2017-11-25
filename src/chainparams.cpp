@@ -14,6 +14,8 @@
 
 #include "chainparamsseeds.h"
 
+#include "base58.h"
+
 static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesisOutputScript, uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
 {
     CMutableTransaction txNew;
@@ -107,6 +109,9 @@ public:
         // By default assume that the signatures in ancestors of this block are valid.
         consensus.defaultAssumeValid = uint256S("0x0");
 
+        // Block 1 could be mined only if coinbase is set to this pub key / address
+        preminePubKey = "020401eaafcacb2c71876bc648fe5d3119cc0036e6c6074c17b51506c579ce2f7a";
+
         /**
          * The message start string is designed to be unlikely to occur in normal data.
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
@@ -195,6 +200,9 @@ public:
         // By default assume that the signatures in ancestors of this block are valid.
         consensus.defaultAssumeValid = uint256S("0x0"); //0
 
+        // Block 1 could be mined only if coinbase is set to this pub key / address
+        preminePubKey = "020401eaafcacb2c71876bc648fe5d3119cc0036e6c6074c17b51506c579ce2f7a";
+
         pchMessageStart[0] = 0x15;
         pchMessageStart[1] = 0x2b;
         pchMessageStart[2] = 0x19;
@@ -276,6 +284,9 @@ public:
         // By default assume that the signatures in ancestors of this block are valid.
         consensus.defaultAssumeValid = uint256S("0x00");
 
+        // Block 1 could be mined only if coinbase is set to this pub key / address
+        preminePubKey = "020401eaafcacb2c71876bc648fe5d3119cc0036e6c6074c17b51506c579ce2f7a";
+
         pchMessageStart[0] = 0x39;
         pchMessageStart[1] = 0x47;
         pchMessageStart[2] = 0x52;
@@ -343,4 +354,16 @@ void SelectParams(const std::string& network)
 void UpdateVersionBitsParameters(Consensus::DeploymentPos d, int64_t nStartTime, int64_t nTimeout)
 {
     globalChainParams->UpdateVersionBitsParameters(d, nStartTime, nTimeout);
+}
+
+const bool CChainParams::isPreminePubkey(CScript scriptPubKey) const
+{
+    std::vector<unsigned char> bytes = ToByteVector(ParseHex(preminePubKey));
+
+    CPubKey pubKey(bytes);
+
+    CScript p2pkScript = CScript() << bytes << OP_CHECKSIG;
+    CScript p2pkhScript = CScript() << OP_DUP << OP_HASH160 << ToByteVector(pubKey.GetID()) << OP_EQUALVERIFY << OP_CHECKSIG;
+
+    return scriptPubKey == p2pkhScript || scriptPubKey == p2pkScript;
 }
