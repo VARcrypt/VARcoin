@@ -28,7 +28,7 @@
     <name>BanTableModel</name>
     </context>
 <context>
-    <name>VarcoinGUI</name>
+    <name>VARcoinGUI</name>
     <message>
         <source>Quit application</source>
         <translation>Κλείσιμο εφαρμογής</translation>
@@ -190,7 +190,7 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>varcoin-core</name>
+    <name>VARcoin-core</name>
     <message>
         <source>Insufficient funds</source>
         <translation>Κεφάλαια μη επαρκή</translation>

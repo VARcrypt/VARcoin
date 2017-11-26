@@ -12,10 +12,10 @@
     <name>BanTableModel</name>
     </context>
 <context>
-    <name>VarcoinGUI</name>
+    <name>VARcoinGUI</name>
     <message>
-        <source>Varcoin</source>
-        <translation>Varcoin</translation>
+        <source>VARcoin</source>
+        <translation>VARcoin</translation>
     </message>
     </context>
 <context>
@@ -154,10 +154,10 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>varcoin-core</name>
+    <name>VARcoin-core</name>
     <message>
-        <source>Varcoin Core</source>
-        <translation>Varcoin Jezrga</translation>
+        <source>VARcoin Core</source>
+        <translation>VARcoin Jezrga</translation>
     </message>
     </context>
 </TS>

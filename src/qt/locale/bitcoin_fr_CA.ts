@@ -36,7 +36,7 @@
     <name>BanTableModel</name>
     </context>
 <context>
-    <name>VarcoinGUI</name>
+    <name>VARcoinGUI</name>
     </context>
 <context>
     <name>CoinControlDialog</name>
@@ -154,6 +154,6 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>varcoin-core</name>
+    <name>VARcoin-core</name>
     </context>
 </TS>

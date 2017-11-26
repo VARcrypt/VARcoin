@@ -12,7 +12,7 @@
     <name>BanTableModel</name>
     </context>
 <context>
-    <name>VarcoinGUI</name>
+    <name>VARcoinGUI</name>
     <message>
         <source>Error</source>
         <translation>错误</translation>
@@ -107,7 +107,7 @@
         <translation>仅支付全额的%1</translation>
     </message>
     <message>
-        <source>Warning: Invalid Varcoin address</source>
+        <source>Warning: Invalid VARcoin address</source>
         <translation>警告：比特币地址无效</translation>
     </message>
     </context>
@@ -166,7 +166,7 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>varcoin-core</name>
+    <name>VARcoin-core</name>
     <message>
         <source>Transaction too large for fee policy</source>
         <translation>根据费率标准，本次转账超额</translation>

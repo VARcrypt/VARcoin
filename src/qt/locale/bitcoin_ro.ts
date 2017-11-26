@@ -76,7 +76,7 @@
     </message>
 </context>
 <context>
-    <name>VarcoinGUI</name>
+    <name>VARcoinGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Semnează &amp;mesajul...</translation>
@@ -142,8 +142,8 @@
         <translation>Deschide &amp;URI...</translation>
     </message>
     <message>
-        <source>Send coins to a Varcoin address</source>
-        <translation>Trimite monedele către o adresă Varcoin</translation>
+        <source>Send coins to a VARcoin address</source>
+        <translation>Trimite monedele către o adresă VARcoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -166,8 +166,8 @@
         <translation>&amp;Verifică mesajul...</translation>
     </message>
     <message>
-        <source>Varcoin</source>
-        <translation>Varcoin</translation>
+        <source>VARcoin</source>
+        <translation>VARcoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -194,12 +194,12 @@
         <translation>Criptează cheile private care aparțin portofelului tău.</translation>
     </message>
     <message>
-        <source>Sign messages with your Varcoin addresses to prove you own them</source>
-        <translation>Semnează mesajele cu adresa ta de Varcoin pentru a face dovada că îți aparțin.</translation>
+        <source>Sign messages with your VARcoin addresses to prove you own them</source>
+        <translation>Semnează mesajele cu adresa ta de VARcoin pentru a face dovada că îți aparțin.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Varcoin addresses</source>
-        <translation>Verifică mesajele cu scopul de a asigura faptul că au fost semnate cu adresa de Varcoin specificată.</translation>
+        <source>Verify messages to ensure they were signed with specified VARcoin addresses</source>
+        <translation>Verifică mesajele cu scopul de a asigura faptul că au fost semnate cu adresa de VARcoin specificată.</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -214,12 +214,12 @@
         <translation>&amp;Ajutor</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and varcoin: URIs)</source>
-        <translation>Cerere plată (generează coduri QR și varcoin: URIs)</translation>
+        <source>Request payments (generates QR codes and VARcoin: URIs)</source>
+        <translation>Cerere plată (generează coduri QR și VARcoin: URIs)</translation>
     </message>
     <message>
-        <source>Open a varcoin: URI or payment request</source>
-        <translation>Deschide un varcoin: URI sau cerere de plată</translation>
+        <source>Open a VARcoin: URI or payment request</source>
+        <translation>Deschide un VARcoin: URI sau cerere de plată</translation>
     </message>
     <message>
         <source>%1 behind</source>
@@ -746,10 +746,10 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>varcoin-core</name>
+    <name>VARcoin-core</name>
     <message>
-        <source>Varcoin Core</source>
-        <translation>Varcoin Core</translation>
+        <source>VARcoin Core</source>
+        <translation>VARcoin Core</translation>
     </message>
     <message>
         <source>Information</source>
