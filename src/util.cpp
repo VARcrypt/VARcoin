@@ -87,8 +87,8 @@
 // Application startup time (used for uptime calculation)
 const int64_t nStartupTime = GetTime();
 
-const char * const BITCOIN_CONF_FILENAME = "VARcoin.conf";
-const char * const BITCOIN_PID_FILENAME = "VARcoind.pid";
+const char * const BITCOIN_CONF_FILENAME = "varcoin.conf";
+const char * const BITCOIN_PID_FILENAME = "varcoind.pid";
 
 ArgsManager gArgs;
 bool fPrintToConsole = false;
@@ -505,7 +505,7 @@ static std::string FormatException(const std::exception* pex, const char* pszThr
     char pszModule[MAX_PATH] = "";
     GetModuleFileNameA(nullptr, pszModule, sizeof(pszModule));
 #else
-    const char* pszModule = "VARcoin";
+    const char* pszModule = "varcoin";
 #endif
     if (pex)
         return strprintf(
@@ -530,7 +530,7 @@ fs::path GetDefaultDataDir()
     // Unix: ~/.bitcoin
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "VARcoin";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "varcoin";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -540,10 +540,10 @@ fs::path GetDefaultDataDir()
         pathRet = fs::path(pszHome);
 #ifdef MAC_OSX
     // Mac
-    return pathRet / "Library/Application Support/VARcoin";
+    return pathRet / "Library/Application Support/varcoin";
 #else
     // Unix
-    return pathRet / ".VARcoin";
+    return pathRet / ".varcoin";
 #endif
 #endif
 }
