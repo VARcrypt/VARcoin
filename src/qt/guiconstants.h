@@ -49,7 +49,7 @@ static const int MAX_URI_LENGTH = 255;
 #define SPINNER_FRAMES 36
 
 #define QAPP_ORG_NAME "VARcoin"
-#define QAPP_ORG_DOMAIN "Varcrypt.io"
+#define QAPP_ORG_DOMAIN "varcrypt.io"
 #define QAPP_APP_NAME_DEFAULT "VARcoin-Qt"
 #define QAPP_APP_NAME_TESTNET "VARcoin-Qt-testnet"
 
