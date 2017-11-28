@@ -110,7 +110,7 @@ public:
         consensus.defaultAssumeValid = uint256S("0x0");
 
         // Block 1 could be mined only if coinbase is set to this pub key / address
-        preminePubKey = "020401eaafcacb2c71876bc648fe5d3119cc0036e6c6074c17b51506c579ce2f7a";
+        preminePubKey = "0246a431a65ae91381b7251f9a3da27a581a1a6482cd24b4a59443040d009aab03";
 
         /**
          * The message start string is designed to be unlikely to occur in normal data.
@@ -201,7 +201,7 @@ public:
         consensus.defaultAssumeValid = uint256S("0x0"); //0
 
         // Block 1 could be mined only if coinbase is set to this pub key / address
-        preminePubKey = "020401eaafcacb2c71876bc648fe5d3119cc0036e6c6074c17b51506c579ce2f7a";
+        preminePubKey = "0246a431a65ae91381b7251f9a3da27a581a1a6482cd24b4a59443040d009aab03";
 
         pchMessageStart[0] = 0x15;
         pchMessageStart[1] = 0x2b;
@@ -285,7 +285,7 @@ public:
         consensus.defaultAssumeValid = uint256S("0x00");
 
         // Block 1 could be mined only if coinbase is set to this pub key / address
-        preminePubKey = "020401eaafcacb2c71876bc648fe5d3119cc0036e6c6074c17b51506c579ce2f7a";
+        preminePubKey = "0246a431a65ae91381b7251f9a3da27a581a1a6482cd24b4a59443040d009aab03";
 
         pchMessageStart[0] = 0x39;
         pchMessageStart[1] = 0x47;
