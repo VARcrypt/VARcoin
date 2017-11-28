@@ -62,11 +62,11 @@
         <translation>מקבל כתובות</translation>
     </message>
     <message>
-        <source>These are your Varcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your VARcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>אלו הן כתובות הביטקוין שלך לשליחת תשלומים. תמיד בדוק את כתובת הארנק המקבל לפני שליחת מטבעות</translation>
     </message>
     <message>
-        <source>These are your Varcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your VARcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>אלו הן כתובות הביטקוין שלך לקבלת תשלומים. מומלץ להשתמש בכתובת חדשה בכל העברת מטבעות</translation>
     </message>
     </context>
@@ -80,9 +80,9 @@
     <name>BanTableModel</name>
     </context>
 <context>
-    <name>VarcoinGUI</name>
+    <name>VARcoinGUI</name>
     <message>
-        <source>Varcoin</source>
+        <source>VARcoin</source>
         <translation>ביטקוין</translation>
     </message>
     <message>
@@ -198,6 +198,6 @@
     </message>
     </context>
 <context>
-    <name>varcoin-core</name>
+    <name>VARcoin-core</name>
     </context>
 </TS>

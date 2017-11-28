@@ -64,7 +64,7 @@
     <name>BanTableModel</name>
     </context>
 <context>
-    <name>VarcoinGUI</name>
+    <name>VARcoinGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>&amp;Asinar mensaxe...</translation>
@@ -130,8 +130,8 @@
         <translation>Reindexando bloques no disco...</translation>
     </message>
     <message>
-        <source>Send coins to a Varcoin address</source>
-        <translation>Enviar moedas a unha dirección Varcoin</translation>
+        <source>Send coins to a VARcoin address</source>
+        <translation>Enviar moedas a unha dirección VARcoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -154,8 +154,8 @@
         <translation>&amp;Verificar mensaxe...</translation>
     </message>
     <message>
-        <source>Varcoin</source>
-        <translation>Varcoin</translation>
+        <source>VARcoin</source>
+        <translation>VARcoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -182,12 +182,12 @@
         <translation>Encriptar as claves privadas que pertencen ao teu moedeiro</translation>
     </message>
     <message>
-        <source>Sign messages with your Varcoin addresses to prove you own them</source>
-        <translation>Asina mensaxes coas túas direccións Varcoin para probar que te pertencen</translation>
+        <source>Sign messages with your VARcoin addresses to prove you own them</source>
+        <translation>Asina mensaxes coas túas direccións VARcoin para probar que te pertencen</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Varcoin addresses</source>
-        <translation>Verificar mensaxes para asegurar que foron asinados con direccións Varcoin dadas.</translation>
+        <source>Verify messages to ensure they were signed with specified VARcoin addresses</source>
+        <translation>Verificar mensaxes para asegurar que foron asinados con direccións VARcoin dadas.</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -206,8 +206,8 @@
         <translation>Barra de ferramentas</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and varcoin: URIs)</source>
-        <translation>Solicitar pagos (xenera códigos QR e varcoin: URIs)</translation>
+        <source>Request payments (generates QR codes and VARcoin: URIs)</source>
+        <translation>Solicitar pagos (xenera códigos QR e VARcoin: URIs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -218,8 +218,8 @@
         <translation>Amosar a listaxe de etiquetas e direccións para recibir empregadas</translation>
     </message>
     <message>
-        <source>Open a varcoin: URI or payment request</source>
-        <translation>Abrir un varcoin: URI ou solicitude de pago</translation>
+        <source>Open a VARcoin: URI or payment request</source>
+        <translation>Abrir un VARcoin: URI ou solicitude de pago</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -466,8 +466,8 @@
         <translation>Moedeiro</translation>
     </message>
     <message>
-        <source>Automatically open the Varcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Abrir automáticamente o porto do cliente Varcoin no router. Esto so funciona se o teu router soporta UPnP e está habilitado.</translation>
+        <source>Automatically open the VARcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Abrir automáticamente o porto do cliente VARcoin no router. Esto so funciona se o teu router soporta UPnP e está habilitado.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -545,8 +545,8 @@
         <translation>Formulario</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Varcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>A información amosada por estar desactualizada. O teu moedeiro sincronízase automáticamente coa rede Varcoin despois de que se estableza unha conexión, pero este proceso non está todavía rematado.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the VARcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>A información amosada por estar desactualizada. O teu moedeiro sincronízase automáticamente coa rede VARcoin despois de que se estableza unha conexión, pero este proceso non está todavía rematado.</translation>
     </message>
     <message>
         <source>Your current spendable balance</source>
@@ -927,8 +927,8 @@
         <translation>Copiar a sinatura actual ao portapapeis do sistema</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Varcoin address</source>
-        <translation>Asina a mensaxe para probar que posees esta dirección Varcoin</translation>
+        <source>Sign the message to prove you own this VARcoin address</source>
+        <translation>Asina a mensaxe para probar que posees esta dirección VARcoin</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -947,8 +947,8 @@
         <translation>&amp;Verificar Mensaxe</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Varcoin address</source>
-        <translation>Verificar a mensaxe para asegurar que foi asinada coa dirección Varcoin especificada</translation>
+        <source>Verify the message to ensure it was signed with the specified VARcoin address</source>
+        <translation>Verificar a mensaxe para asegurar que foi asinada coa dirección VARcoin especificada</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -1002,7 +1002,7 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>varcoin-core</name>
+    <name>VARcoin-core</name>
     <message>
         <source>Options:</source>
         <translation>Opcións:</translation>
@@ -1028,8 +1028,8 @@
         <translation>Executar no fondo como un demo e aceptar comandos</translation>
     </message>
     <message>
-        <source>Varcoin Core</source>
-        <translation>Core de Varcoin</translation>
+        <source>VARcoin Core</source>
+        <translation>Core de VARcoin</translation>
     </message>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>

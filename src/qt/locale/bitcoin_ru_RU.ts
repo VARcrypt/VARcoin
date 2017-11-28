@@ -152,7 +152,7 @@
     <name>BanTableModel</name>
     </context>
 <context>
-    <name>VarcoinGUI</name>
+    <name>VARcoinGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Подписать &amp;сообщение...</translation>
@@ -230,8 +230,8 @@
         <translation>&amp;Проверить сообщение...</translation>
     </message>
     <message>
-        <source>Varcoin</source>
-        <translation>Varcoin Core</translation>
+        <source>VARcoin</source>
+        <translation>VARcoin Core</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -442,8 +442,8 @@
         <translation>Пробросить порт через &amp;UPnP</translation>
     </message>
     <message>
-        <source>Connect to the Varcoin network through a SOCKS5 proxy.</source>
-        <translation>Подключится к сети Varcoin через SOCKS5 прокси.</translation>
+        <source>Connect to the VARcoin network through a SOCKS5 proxy.</source>
+        <translation>Подключится к сети VARcoin через SOCKS5 прокси.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -522,7 +522,7 @@
 <context>
     <name>QObject</name>
     <message>
-        <source>Enter a Varcoin address (e.g. %1)</source>
+        <source>Enter a VARcoin address (e.g. %1)</source>
         <translation>Введите биткоин-адрес (напр. %1)</translation>
     </message>
     <message numerus="yes">
@@ -830,14 +830,14 @@
     </message>
     </context>
 <context>
-    <name>varcoin-core</name>
+    <name>VARcoin-core</name>
     <message>
-        <source>Varcoin Core</source>
-        <translation>Varcoin Core</translation>
+        <source>VARcoin Core</source>
+        <translation>VARcoin Core</translation>
     </message>
     <message>
         <source>Whitelisted peers cannot be DoS banned and their transactions are always relayed, even if they are already in the mempool, useful e.g. for a gateway</source>
-        <translation>varcoin-core</translation>
+        <translation>VARcoin-core</translation>
     </message>
     <message>
         <source>Information</source>

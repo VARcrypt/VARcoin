@@ -43,11 +43,11 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>Choisissez une adresse où envoyer les varcoins</translation>
+        <translation>Choisissez une adresse où envoyer les VARcoins</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>Choisissez une adresse où recevoir les varcoins</translation>
+        <translation>Choisissez une adresse où recevoir les VARcoins</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
@@ -148,7 +148,7 @@
     </message>
 </context>
 <context>
-    <name>VarcoinGUI</name>
+    <name>VARcoinGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Signer un &amp;message...</translation>
@@ -238,8 +238,8 @@
         <translation>Réindexer les blocs sur le disque...</translation>
     </message>
     <message>
-        <source>Send coins to a Varcoin address</source>
-        <translation>Envoyer des pièces à une adresse Varcoin</translation>
+        <source>Send coins to a VARcoin address</source>
+        <translation>Envoyer des pièces à une adresse VARcoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -262,8 +262,8 @@
         <translation>&amp;Vérification du message</translation>
     </message>
     <message>
-        <source>Varcoin</source>
-        <translation>Varcoin</translation>
+        <source>VARcoin</source>
+        <translation>VARcoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -290,8 +290,8 @@
         <translation>Crypter les clé privées qui appartiennent votre portefeuille</translation>
     </message>
     <message>
-        <source>Sign messages with your Varcoin addresses to prove you own them</source>
-        <translation>Signer vos messages avec vos adresses Varcoin pour prouver que vous les détenez</translation>
+        <source>Sign messages with your VARcoin addresses to prove you own them</source>
+        <translation>Signer vos messages avec vos adresses VARcoin pour prouver que vous les détenez</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -310,24 +310,24 @@
         <translation>Barre d'outils des onglets</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and varcoin: URIs)</source>
-        <translation>Demander des paiements (générer QR codes et varcoin: URIs)</translation>
+        <source>Request payments (generates QR codes and VARcoin: URIs)</source>
+        <translation>Demander des paiements (générer QR codes et VARcoin: URIs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
         <translation>Montrer la liste des adresses d'envois utilisées et les étiquettes</translation>
     </message>
     <message>
-        <source>Open a varcoin: URI or payment request</source>
-        <translation>Ouvrir un varcoin: URI ou demande de paiement</translation>
+        <source>Open a VARcoin: URI or payment request</source>
+        <translation>Ouvrir un VARcoin: URI ou demande de paiement</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>&amp;Options de ligne de commande</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Varcoin network</source>
-        <translation><numerusform>%n connexion active au réseau Varcoin</numerusform><numerusform>%n connexions actives au réseau Varcoin</numerusform></translation>
+        <source>%n active connection(s) to VARcoin network</source>
+        <translation><numerusform>%n connexion active au réseau VARcoin</numerusform><numerusform>%n connexions actives au réseau VARcoin</numerusform></translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -712,8 +712,8 @@
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically open the Varcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Ouvrir le port du client Varcoin automatiquement sur le routeur. Cela ne fonctionne que si votre routeur supporte l'UPnP et si la fonctionnalité est activée.</translation>
+        <source>Automatically open the VARcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Ouvrir le port du client VARcoin automatiquement sur le routeur. Cela ne fonctionne que si votre routeur supporte l'UPnP et si la fonctionnalité est activée.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -872,8 +872,8 @@
         <translation>Montant</translation>
     </message>
     <message>
-        <source>Enter a Varcoin address (e.g. %1)</source>
-        <translation>Entrer une adresse Varcoin (e.g. %1)</translation>
+        <source>Enter a VARcoin address (e.g. %1)</source>
+        <translation>Entrer une adresse VARcoin (e.g. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1708,7 +1708,7 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>varcoin-core</name>
+    <name>VARcoin-core</name>
     <message>
         <source>Options:</source>
         <translation>Options :</translation>
@@ -1734,8 +1734,8 @@
         <translation>Impossible de démarrer le serveur HTTP. Voir le journal de débogage pour plus de détails.</translation>
     </message>
     <message>
-        <source>Varcoin Core</source>
-        <translation>Varcoin Core</translation>
+        <source>VARcoin Core</source>
+        <translation>VARcoin Core</translation>
     </message>
     <message>
         <source>&lt;category&gt; can be:</source>

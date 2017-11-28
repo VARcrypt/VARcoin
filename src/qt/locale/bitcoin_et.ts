@@ -62,12 +62,12 @@
         <translation>Vastuvõtvad aadressid</translation>
     </message>
     <message>
-        <source>These are your Varcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Need on sinu Varcoin aadressid maksete saatmiseks. Ennem müntide saatmist kontrolli alati summat ja makse saaja aadressi.</translation>
+        <source>These are your VARcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Need on sinu VARcoin aadressid maksete saatmiseks. Ennem müntide saatmist kontrolli alati summat ja makse saaja aadressi.</translation>
     </message>
     <message>
-        <source>These are your Varcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Need on sinu Varcoin aadressid sisenevate maksete vastu võtmiseks. Soovitav on iga tehingu tarbeks kasutada uut aadressi.</translation>
+        <source>These are your VARcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Need on sinu VARcoin aadressid sisenevate maksete vastu võtmiseks. Soovitav on iga tehingu tarbeks kasutada uut aadressi.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -220,7 +220,7 @@
     </message>
     </context>
 <context>
-    <name>VarcoinGUI</name>
+    <name>VARcoinGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Signeeri &amp;sõnum</translation>
@@ -290,8 +290,8 @@
         <translation>Kettal olevate blokkide re-indekseerimine...</translation>
     </message>
     <message>
-        <source>Send coins to a Varcoin address</source>
-        <translation>Saada münte Varcoini aadressile</translation>
+        <source>Send coins to a VARcoin address</source>
+        <translation>Saada münte VARcoini aadressile</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -314,8 +314,8 @@
         <translation>&amp;Kontrolli sõnumit...</translation>
     </message>
     <message>
-        <source>Varcoin</source>
-        <translation>Varcoin</translation>
+        <source>VARcoin</source>
+        <translation>VARcoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -342,12 +342,12 @@
         <translation>Krüpteeri oma rahakoti privaatvõtmed</translation>
     </message>
     <message>
-        <source>Sign messages with your Varcoin addresses to prove you own them</source>
-        <translation>Omandi tõestamiseks allkirjasta sõnumid oma Varcoini aadressiga</translation>
+        <source>Sign messages with your VARcoin addresses to prove you own them</source>
+        <translation>Omandi tõestamiseks allkirjasta sõnumid oma VARcoini aadressiga</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Varcoin addresses</source>
-        <translation>Kinnita sõnumid kindlustamaks et need allkirjastati määratud Varcoini aadressiga</translation>
+        <source>Verify messages to ensure they were signed with specified VARcoin addresses</source>
+        <translation>Kinnita sõnumid kindlustamaks et need allkirjastati määratud VARcoini aadressiga</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -366,20 +366,20 @@
         <translation>Vahelehe tööriistariba</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and varcoin: URIs)</source>
-        <translation>Loo maksepäring (genereerib QR koodid ja varcoini: URId)</translation>
+        <source>Request payments (generates QR codes and VARcoin: URIs)</source>
+        <translation>Loo maksepäring (genereerib QR koodid ja VARcoini: URId)</translation>
     </message>
     <message>
-        <source>Open a varcoin: URI or payment request</source>
-        <translation>Ava varcoini: URI või maksepäring</translation>
+        <source>Open a VARcoin: URI or payment request</source>
+        <translation>Ava VARcoini: URI või maksepäring</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>Käsurea valikud</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Varcoin network</source>
-        <translation><numerusform>%n aktiivne ühendus Varcoini võrku</numerusform><numerusform>%n aktiivset ühendust Varcoini võrku</numerusform></translation>
+        <source>%n active connection(s) to VARcoin network</source>
+        <translation><numerusform>%n aktiivne ühendus VARcoini võrku</numerusform><numerusform>%n aktiivset ühendust VARcoini võrku</numerusform></translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -626,8 +626,8 @@
         <translation>Muuda saatvat aadressi</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Varcoin address.</source>
-        <translation>Sisestatud aadress "%1" ei ole korrektne Varcoin aadress.</translation>
+        <source>The entered address "%1" is not a valid VARcoin address.</source>
+        <translation>Sisestatud aadress "%1" ei ole korrektne VARcoin aadress.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -756,8 +756,8 @@
         <translation>Ekspert</translation>
     </message>
     <message>
-        <source>Automatically open the Varcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Varcoini kliendi pordi automaatne avamine ruuteris. Toimib, kui sinu ruuter aktsepteerib UPnP ühendust.</translation>
+        <source>Automatically open the VARcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>VARcoini kliendi pordi automaatne avamine ruuteris. Toimib, kui sinu ruuter aktsepteerib UPnP ühendust.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -855,7 +855,7 @@
         <translation>Vorm</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Varcoin network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the VARcoin network after a connection is established, but this process has not completed yet.</source>
         <translation>Kuvatav info ei pruugi olla ajakohane. Ühenduse loomisel süngitakse sinu rahakott automaatselt Bitconi võrgustikuga, kuid see toiming on hetkel lõpetamata.</translation>
     </message>
     <message>
@@ -1337,8 +1337,8 @@
         <translation>Maksepäring aegunud.</translation>
     </message>
     <message>
-        <source>Warning: Invalid Varcoin address</source>
-        <translation>Hoiatus: Ebakorrektne Varcoin aadress</translation>
+        <source>Warning: Invalid VARcoin address</source>
+        <translation>Hoiatus: Ebakorrektne VARcoin aadress</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1417,8 +1417,8 @@
         <translation>&amp;Allkirjastamise teade</translation>
     </message>
     <message>
-        <source>The Varcoin address to sign the message with</source>
-        <translation>Varcoin aadress millega sõnum allkirjastada</translation>
+        <source>The VARcoin address to sign the message with</source>
+        <translation>VARcoin aadress millega sõnum allkirjastada</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1449,8 +1449,8 @@
         <translation>Kopeeri praegune signatuur vahemällu</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Varcoin address</source>
-        <translation>Allkirjasta sõnum Varcoini aadressi sulle kuulumise tõestamiseks</translation>
+        <source>Sign the message to prove you own this VARcoin address</source>
+        <translation>Allkirjasta sõnum VARcoini aadressi sulle kuulumise tõestamiseks</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -1469,12 +1469,12 @@
         <translation>&amp;Kinnita Sõnum</translation>
     </message>
     <message>
-        <source>The Varcoin address the message was signed with</source>
-        <translation>Varcoin aadress millega sõnum on allkirjastatud</translation>
+        <source>The VARcoin address the message was signed with</source>
+        <translation>VARcoin aadress millega sõnum on allkirjastatud</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Varcoin address</source>
-        <translation>Kinnita sõnum tõestamaks selle allkirjastatust määratud Varcoini aadressiga.</translation>
+        <source>Verify the message to ensure it was signed with the specified VARcoin address</source>
+        <translation>Kinnita sõnum tõestamaks selle allkirjastatust määratud VARcoini aadressiga.</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -1732,7 +1732,7 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>varcoin-core</name>
+    <name>VARcoin-core</name>
     <message>
         <source>Options:</source>
         <translation>Valikud:</translation>
@@ -1758,8 +1758,8 @@
         <translation>Tööta taustal ning aktsepteeri käsklusi</translation>
     </message>
     <message>
-        <source>Varcoin Core</source>
-        <translation>Varcoini tuumik</translation>
+        <source>VARcoin Core</source>
+        <translation>VARcoini tuumik</translation>
     </message>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
