@@ -1,5 +1,5 @@
 ---
-name: "varcoin-linux-0.15"
+name: "VARcoin-linux-0.0.1"
 enable_cache: true
 suites:
 - "trusty"
@@ -28,8 +28,8 @@ packages:
 - "ca-certificates"
 - "python"
 remotes:
-- "url": "https://github.com/varcrypt/varcoin.git"
-  "dir": "varcoin"
+- "url": "https://github.com/varcrypt/VARcoin.git"
+  "dir": "VARcoin"
 files: []
 script: |
 
@@ -113,7 +113,7 @@ script: |
   chmod +x ${WRAP_DIR}/${prog}
   done
 
-  cd varcoin
+  cd VARcoin
   BASEPREFIX=`pwd`/depends
   # Build dependencies for each host
   for i in $HOSTS; do
@@ -135,7 +135,7 @@ script: |
   ./autogen.sh
   CONFIG_SITE=${BASEPREFIX}/`echo "${HOSTS}" | awk '{print $1;}'`/share/config.site ./configure --prefix=/
   make dist
-  SOURCEDIST=`echo varcoin-*.tar.gz`
+  SOURCEDIST=`echo VARcoin-*.tar.gz`
   DISTNAME=`echo ${SOURCEDIST} | sed 's/.tar.*//'`
   # Correct tar file order
   mkdir -p temp
