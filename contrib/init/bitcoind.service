@@ -3,13 +3,13 @@ Description=Bitcoin's distributed currency daemon
 After=network.target
 
 [Service]
-User=bitcoin
-Group=bitcoin
+User=varcoin
+Group=varcoin
 
 Type=forking
-PIDFile=/var/lib/bitcoind/bitcoind.pid
-ExecStart=/usr/bin/bitcoind -daemon -pid=/var/lib/bitcoind/bitcoind.pid \
--conf=/etc/bitcoin/bitcoin.conf -datadir=/var/lib/bitcoind -disablewallet
+PIDFile=/var/lib/varcoind/varcoind.pid
+ExecStart=/usr/bin/varcoind -daemon -pid=/var/lib/varcoind/varcoind.pid \
+-conf=/etc/varcoin/varcoin.conf -datadir=/var/lib/varcoind -disablewallet
 
 Restart=always
 PrivateTmp=true

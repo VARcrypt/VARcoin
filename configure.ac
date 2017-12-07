@@ -14,10 +14,10 @@ AC_CONFIG_HEADERS([src/config/bitcoin-config.h])
 AC_CONFIG_AUX_DIR([build-aux])
 AC_CONFIG_MACRO_DIR([build-aux/m4])
 
-BITCOIN_DAEMON_NAME=VARcoind
-BITCOIN_GUI_NAME=VARcoin-qt
-BITCOIN_CLI_NAME=VARcoin-cli
-BITCOIN_TX_NAME=VARcoin-tx
+BITCOIN_DAEMON_NAME=varcoind
+BITCOIN_GUI_NAME=varcoin-qt
+BITCOIN_CLI_NAME=varcoin-cli
+BITCOIN_TX_NAME=bitcoin-tx
 
 dnl Unless the user specified ARFLAGS, force it to be cr
 AC_ARG_VAR(ARFLAGS, [Flags for the archiver, defaults to <cr> if not set])
