@@ -254,7 +254,7 @@ popd
 if [[ $build = true ]]
 then
 	# Make output folder
-	mkdir -p ./bitcoin-binaries/${VERSION}
+	mkdir -p ./varcoin-binaries/${VERSION}
 	
 	# Build Dependencies
 	echo ""
@@ -274,7 +274,7 @@ then
 	    echo ""
 	    ./bin/gbuild -j ${proc} -m ${mem} --commit VARcoin=${COMMIT} --url VARcoin=${url} ../VARcoin/contrib/gitian-descriptors/gitian-linux.yml
 	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../VARcoin/contrib/gitian-descriptors/gitian-linux.yml
-	    mv build/out/varcoin-*.tar.gz build/out/src/bitcoin-*.tar.gz ../bitcoin-binaries/${VERSION}
+	    mv build/out/Varcoin-*.tar.gz build/out/src/Varcoin-*.tar.gz ../varcoin-binaries/${VERSION}
 	fi
 	# Windows
 	if [[ $windows = true ]]
@@ -284,8 +284,8 @@ then
 	    echo ""
 	    ./bin/gbuild -j ${proc} -m ${mem} --commit VARcoin=${COMMIT} --url VARcoin=${url} ../VARcoin/contrib/gitian-descriptors/gitian-win.yml
 	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../VARcoin/contrib/gitian-descriptors/gitian-win.yml
-	    mv build/out/varcoin-*-win-unsigned.tar.gz inputs/bitcoin-win-unsigned.tar.gz
-	    mv build/out/varcoin-*.zip build/out/varcoin-*.exe ../bitcoin-binaries/${VERSION}
+	    mv build/out/Varcoin-*-win-unsigned.tar.gz inputs/Varcoin-win-unsigned.tar.gz
+	    mv build/out/Varcoin-*.zip build/out/Varcoin-*.exe ../varcoin-binaries/${VERSION}
 	fi
 	# Mac OSX
 	if [[ $osx = true ]]
@@ -295,8 +295,8 @@ then
 	    echo ""
 	    ./bin/gbuild -j ${proc} -m ${mem} --commit VARcoin=${COMMIT} --url VARcoin=${url} ../VARcoin/contrib/gitian-descriptors/gitian-osx.yml
 	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../VARcoin/contrib/gitian-descriptors/gitian-osx.yml
-	    mv build/out/varcoin-*-osx-unsigned.tar.gz inputs/bitcoin-osx-unsigned.tar.gz
-	    mv build/out/varcoin-*.tar.gz build/out/varcoin-*.dmg ../bitcoin-binaries/${VERSION}
+	    mv build/out/Varcoin-*-osx-unsigned.tar.gz inputs/Varcoin-osx-unsigned.tar.gz
+	    mv build/out/Varcoin-*.tar.gz build/out/Varcoin-*.dmg ../varcoin-binaries/${VERSION}
 	fi
 	popd
 
@@ -360,8 +360,8 @@ then
 	    echo ""
 	    ./bin/gbuild -i --commit signature=${COMMIT} ../VARcoin/contrib/gitian-descriptors/gitian-win-signer.yml
 	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../VARcoin/contrib/gitian-descriptors/gitian-win-signer.yml
-	    mv build/out/varcoin-*win64-setup.exe ../bitcoin-binaries/${VERSION}
-	    mv build/out/varcoin-*win32-setup.exe ../bitcoin-binaries/${VERSION}
+	    mv build/out/Varcoin-*win64-setup.exe ../varcoin-binaries/${VERSION}
+	    mv build/out/Varcoin-*win32-setup.exe ../varcoin-binaries/${VERSION}
 	fi
 	# Sign Mac OSX
 	if [[ $osx = true ]]
@@ -371,7 +371,7 @@ then
 	    echo ""
 	    ./bin/gbuild -i --commit signature=${COMMIT} ../VARcoin/contrib/gitian-descriptors/gitian-osx-signer.yml
 	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../VARcoin/contrib/gitian-descriptors/gitian-osx-signer.yml
-	    mv build/out/varcoin-osx-signed.dmg ../bitcoin-binaries/${VERSION}/bitcoin-${VERSION}-osx.dmg
+	    mv build/out/Varcoin-osx-signed.dmg ../varcoin-binaries/${VERSION}/Varcoin-${VERSION}-osx.dmg
 	fi
 	popd
 
