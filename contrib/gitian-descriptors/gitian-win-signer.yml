@@ -1,5 +1,5 @@
 ---
-name: "Varcoin-win-signer"
+name: "VARcoin-win-signer"
 suites:
 - "trusty"
 architectures:

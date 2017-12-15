@@ -1,5 +1,5 @@
 ---
-name: "Varcoin-osx-0.0.1"
+name: "VARcoin-osx-0.0.1"
 enable_cache: true
 suites:
 - "trusty"

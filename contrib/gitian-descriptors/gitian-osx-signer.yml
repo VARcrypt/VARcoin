@@ -1,5 +1,5 @@
 ---
-name: "Varcoin-dmg-signer"
+name: "VARcoin-dmg-signer"
 suites:
 - "trusty"
 architectures:

@@ -1,5 +1,5 @@
 ---
-name: "Varcoin-win-0.0.1"
+name: "VARcoin-win-0.0.1"
 enable_cache: true
 suites:
 - "trusty"
