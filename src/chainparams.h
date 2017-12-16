@@ -85,7 +85,7 @@ public:
 
     const std::string PreminePubKey() const { return preminePubKey; }
 
-    const bool isPreminePubkey(CScript scriptPubKey) const;
+    bool isPreminePubkey(CScript scriptPubKey) const;
 
 protected:
     CChainParams() {}

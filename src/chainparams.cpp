@@ -356,7 +356,7 @@ void UpdateVersionBitsParameters(Consensus::DeploymentPos d, int64_t nStartTime,
     globalChainParams->UpdateVersionBitsParameters(d, nStartTime, nTimeout);
 }
 
-const bool CChainParams::isPreminePubkey(CScript scriptPubKey) const
+bool CChainParams::isPreminePubkey(CScript scriptPubKey) const
 {
     std::vector<unsigned char> bytes = ToByteVector(ParseHex(preminePubKey));
 
