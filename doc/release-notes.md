@@ -1,8 +1,13 @@
-Bitcoin Core version *0.15.0.1* is now available from:
+Bitcoin Core version *0.15.1* is now available from:
 
-  <https://bitcoin.org/bin/bitcoin-core-0.15.0.1/>
+  <https://bitcoincore.org/bin/bitcoin-core-0.15.x/>
 
-This is a minor bug fix for 0.15.0.
+or
+
+  <https://bitcoin.org/bin/bitcoin-core-0.15.x/>
+
+This is a new minor version release, including various bugfixes and
+performance improvements, as well as updated translations.
 
 Please report bugs using the issue tracker at GitHub:
 
@@ -25,7 +30,7 @@ be converted to a new format, which will take anywhere from a few minutes to
 half an hour, depending on the speed of your machine.
 
 The file format of `fee_estimates.dat` changed in version 0.15.0. Hence, a
-downgrade from version 0.15.0 or upgrade to version 0.15.0 will cause all fee
+downgrade from version 0.15 or upgrade to version 0.15 will cause all fee
 estimates to be discarded.
 
 Note that the block database format also changed in version 0.8.0 and there is no
@@ -53,31 +58,19 @@ the Linux kernel, macOS 10.8+, and Windows Vista and later. Windows XP is not su
 Bitcoin Core should also work on most other Unix-like systems but is not
 frequently tested on them.
 
+
 Notable changes
 ===============
 
-GUI startup crash issue
--------------------------
+0.15.x Change log
+=================
 
-After upgrade to 0.15.0, some clients would crash at startup because a custom
-fee setting was configured that no longer exists in the GUI. This is a minimal
-patch to avoid this issue from occuring.
-
-0.15.0.1 Change log
-====================
-
--  #11332 `46c8d23` Fix possible crash with invalid nCustomFeeRadio in QSettings (achow101, TheBlueMatt)
-
-Also the manpages were updated, as this was forgotten for 0.15.0.
 
 Credits
 =======
 
 Thanks to everyone who directly contributed to this release:
 
-- Andrew Chow
-- Matt Corallo
-- Jonas Schnelli
-- Wladimir J. van der Laan
+(todo)
 
 As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/bitcoin/).
