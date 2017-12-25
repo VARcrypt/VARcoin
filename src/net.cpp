@@ -1555,9 +1555,13 @@ static std::string GetDNSHost(const CDNSSeedData& data, ServiceFlags* requiredSe
 {
     //use default host for non-filter-capable seeds or if we use the default service bits (NODE_NETWORK)
     if (!data.supportsServiceBitsFiltering || *requiredServiceBits == NODE_NETWORK) {
+        LogPrintf("GetDNSHost data.host %s\n", data.host.c_str());
+
         *requiredServiceBits = NODE_NETWORK;
         return data.host;
     }
+
+    LogPrintf("GetDNSHost x%x.%s\n", *requiredServiceBits, data.host);
 
     // See chainparams.cpp, most dnsseeds only support one or two possible servicebits hostnames
     return strprintf("x%x.%s", *requiredServiceBits, data.host);
@@ -1592,15 +1596,22 @@ void CConnman::ThreadDNSAddressSeed()
     LogPrintf("Loading addresses from DNS seeds (could take a while)\n");
 
     for (const CDNSSeedData &seed : vSeeds) {
+        LogPrintf("For Seed %s\n", seed.host.c_str());
+
         if (interruptNet) {
             return;
         }
         if (HaveNameProxy()) {
+            LogPrintf("HaveNameProxy() %s\n", seed.host.c_str());
+
             AddOneShot(seed.host);
         } else {
             std::vector<CNetAddr> vIPs;
             std::vector<CAddress> vAdd;
             ServiceFlags requiredServiceBits = nRelevantServices;
+
+            LogPrintf("Seed %s\n", seed.host.c_str());
+
             std::string host = GetDNSHost(seed, &requiredServiceBits);
             CNetAddr resolveSource;
             if (!resolveSource.SetInternal(host)) {

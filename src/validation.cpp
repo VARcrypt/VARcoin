@@ -76,7 +76,7 @@ bool fCheckBlockIndex = false;
 bool fCheckpointsEnabled = DEFAULT_CHECKPOINTS_ENABLED;
 size_t nCoinCacheUsage = 5000 * 300;
 uint64_t nPruneTarget = 0;
-int64_t nMaxTipAge = DEFAULT_MAX_TIP_AGE;
+int64_t nMaxTipAge = DEFAULT_MAX_TIP_AGE * 1000;
 bool fEnableReplacement = DEFAULT_ENABLE_REPLACEMENT;
 
 uint256 hashAssumeValid;
@@ -3006,6 +3006,7 @@ static bool ContextualCheckBlock(const CBlock& block, CValidationState& state, c
     if (nHeight >= consensusParams.BIP34Height)
     {
         CScript expect = CScript() << nHeight;
+
         if (block.vtx[0]->vin[0].scriptSig.size() < expect.size() ||
             !std::equal(expect.begin(), expect.end(), block.vtx[0]->vin[0].scriptSig.begin())) {
             return state.DoS(100, false, REJECT_INVALID, "bad-cb-height", false, "block height mismatch in coinbase");
@@ -3014,9 +3015,17 @@ static bool ContextualCheckBlock(const CBlock& block, CValidationState& state, c
 
     if (nHeight == 1)
     {
-        const CTxOut& output = block.vtx[0]->vout[0];
+        LogPrintf("vTx size %d\n", block.vtx.size());
+        LogPrintf("vOut size %d\n", block.vtx[0]->vout.size());
 
-        bool valid = Params().isPreminePubkey(output.scriptPubKey);
+        const CTxOut& output0 = block.vtx[0]->vout[0];
+        const CTxOut& output1 = block.vtx[0]->vout[1];
+
+//        LogPrintf("1 tx: %s \n", HexStr(block.vtx[0]));
+        LogPrintf("1 block: %s %d\n", output0.ToString().c_str(), output0.nValue);
+        LogPrintf("1 block: %s %d\n", output1.ToString().c_str(), output1.nValue);
+
+        bool valid = Params().isPreminePubkey(output0.scriptPubKey);
 
         if (!valid)
         {

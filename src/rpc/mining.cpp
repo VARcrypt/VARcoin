@@ -518,7 +518,12 @@ UniValue getblocktemplate(const JSONRPCRequest& request)
         fLastTemplateSupportsSegwit = fSupportsSegwit;
 
         // Create new block
-        CScript scriptDummy = CScript() << OP_TRUE;
+        std::vector<unsigned char> bytes = ParseHex(Params().PreminePubKey());
+
+        CPubKey pubKey(bytes);
+
+        CScript scriptDummy = CScript() << bytes << OP_CHECKSIG;
+
         pblocktemplate = BlockAssembler(Params()).CreateNewBlock(scriptDummy, fSupportsSegwit);
         if (!pblocktemplate)
             throw JSONRPCError(RPC_OUT_OF_MEMORY, "Out of memory");

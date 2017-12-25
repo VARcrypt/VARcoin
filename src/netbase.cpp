@@ -82,7 +82,13 @@ bool static LookupIntern(const char *pszName, std::vector<CNetAddr>& vIP, unsign
     aiHint.ai_flags = fAllowLookup ? AI_ADDRCONFIG : AI_NUMERICHOST;
 #endif
     struct addrinfo *aiRes = nullptr;
+
+    LogPrintf("getaddrinfo %s\n", pszName);
+
     int nErr = getaddrinfo(pszName, nullptr, &aiHint, &aiRes);
+
+    LogPrintf("getaddrinfo %s, ret %d %s\n", pszName, nErr, gai_strerror(nErr));
+
     if (nErr)
         return false;
 
@@ -117,6 +123,8 @@ bool static LookupIntern(const char *pszName, std::vector<CNetAddr>& vIP, unsign
 
 bool LookupHost(const char *pszName, std::vector<CNetAddr>& vIP, unsigned int nMaxSolutions, bool fAllowLookup)
 {
+    LogPrintf("LookupHost %s\n", pszName);
+
     std::string strHost(pszName);
     if (strHost.empty())
         return false;

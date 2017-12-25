@@ -78,8 +78,8 @@ public:
     CMainParams() {
         strNetworkID = "main";
         consensus.nSubsidyHalvingInterval = 420000;
-        consensus.BIP34Height = 0;
-        consensus.BIP34Hash = uint256S("0x0");
+        consensus.BIP34Height = 17;
+        consensus.BIP34Hash = uint256S("0x0000000013d13169397663f35a34cc381592eb6cfd2e099331bc559c44f80e68");
         consensus.BIP65Height = 0;
         consensus.BIP66Height = 0;
         consensus.powLimit = uint256S("00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
@@ -357,7 +357,7 @@ void UpdateVersionBitsParameters(Consensus::DeploymentPos d, int64_t nStartTime,
 
 bool CChainParams::isPreminePubkey(CScript scriptPubKey) const
 {
-    std::vector<unsigned char> bytes = ToByteVector(ParseHex(preminePubKey));
+    std::vector<unsigned char> bytes = ParseHex(preminePubKey);
 
     CPubKey pubKey(bytes);
 
