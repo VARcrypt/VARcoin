@@ -257,7 +257,7 @@ public:
         strNetworkID = "regtest";
         consensus.nSubsidyHalvingInterval = 420000;
         consensus.BIP34Height = 17; // BIP34 has not activated on regtest (far in the future so block v1 are not rejected in tests)
-        consensus.BIP34Hash = uint256();
+        consensus.BIP34Hash = uint256("0000000029ec04afdf26b7271fe2b761d315ddd89665f683c5a557560830a3c5");
         consensus.BIP65Height = 0; // BIP65 activated on regtest (Used in rpc activation tests)
         consensus.BIP66Height = 0; // BIP66 activated on regtest (Used in rpc activation tests)
         consensus.powLimit = uint256S("7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
