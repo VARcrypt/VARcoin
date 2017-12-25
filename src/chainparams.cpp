@@ -170,7 +170,7 @@ public:
         strNetworkID = "test";
         consensus.nSubsidyHalvingInterval = 420000;
         consensus.BIP34Height = 17;
-        consensus.BIP34Hash = uint256S();
+        consensus.BIP34Hash = uint256S("0x0");
         consensus.BIP65Height = 0; //
         consensus.BIP66Height = 0; //
         consensus.powLimit = uint256S("00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
