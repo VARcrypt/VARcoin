@@ -1044,14 +1044,17 @@ CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
     if(nHeight == 1)
         return CAmount(21000000 * COIN);
 
+    if(nHeight < 47500)
+        return CAmount(50 * COIN);
+
     int halvings = nHeight / consensusParams.nSubsidyHalvingInterval;
     // Force block reward to zero when right shift is undefined.
     if (halvings >= 64)
         return 0;
 
-    CAmount nSubsidy = 50 * COIN;
-    // Block Reward for Finding a Block: 50 coins
-    // Subsidy is cut in half every 210,000 blocks which will occur approximately every 4 years.
+    CAmount nSubsidy = 25 * COIN;
+    // Block Reward for Finding a Block: 25 coins
+    // Subsidy is cut in half every 420,000 blocks which will occur approximately every 7 years.
     nSubsidy >>= halvings;
     return nSubsidy;
 }
