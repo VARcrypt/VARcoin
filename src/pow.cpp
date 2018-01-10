@@ -72,7 +72,7 @@ unsigned int static KimotoGravityWell(const CBlockIndex* pindexLast, const CBloc
 
     if (bnNew > powLimitArith) { bnNew = powLimitArith; }
 
-    return bnNew.GetCoqmpact();
+    return bnNew.GetCompact();
 }
 
 
