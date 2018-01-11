@@ -4,8 +4,8 @@
 // Copyright (c) 2013-2079 The Megacoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
-#ifndef MEGACOIN_BIGNUM_H
-#define MEGACOIN_BIGNUM_H
+#ifndef VARCOIN_BIGNUM_H
+#define VARCOIN_BIGNUM_H
 
 #include <stdexcept>
 #include <vector>
